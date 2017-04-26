@@ -1,0 +1,14 @@
+.idea
+.vscode
+typings
+node_modules
+jspm_packages
+*.js.map
+npm-debug*.
+*.d.ts
+.DS_Store
+dist
+coverage
+npm-debug.log
+dist.tar.gz
+.env

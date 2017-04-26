@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "selector-class-pattern": "^[_?a-z0-9\\-]+$",
+    "selector-no-qualifying-type": null,
+    "max-nesting-depth": 4,
+  }
+}
