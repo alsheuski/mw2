@@ -7,7 +7,7 @@ import httpInterceptor from './http-interceptor';
 import icons from './icons/icons';
 import theme from './theme/theme';
 
-export default angular.module('fwcCommon', [
+export default angular.module('mw2Common', [
   router,
   config,
   errorMessages,

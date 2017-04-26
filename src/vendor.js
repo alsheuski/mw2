@@ -10,6 +10,9 @@ import 'angular-ui-router';
 import 'angular-material';
 import 'angular-jwt';
 
+import 'firebase';
+import 'angularfire';
+
 import 'angular-material-data-table';
 import 'angular-material-data-table/dist/md-data-table.css';
 

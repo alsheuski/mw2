@@ -12,6 +12,6 @@ const config = ($mdThemingProvider) => {
   $mdThemingProvider.enableBrowserColor();
 };
 
-export default angular.module('fwcTheme', ['ngMaterial'])
+export default angular.module('mw2Theme', ['ngMaterial'])
   .config(config)
   .name;

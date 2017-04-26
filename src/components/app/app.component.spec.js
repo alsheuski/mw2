@@ -16,7 +16,7 @@ describe('Component: app', () => {
   }));
 
   it('should assign the name bindings to the hero object', () => {
-    component = $componentController('fwcApp',
+    component = $componentController('mw2App',
       {},
       { mock },
     );

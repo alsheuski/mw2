@@ -21,7 +21,7 @@ const routeRun = ($transitions, $state) => {
   $transitions.onFinish(null, angular.noop); // fix ui-router dbl-click
 };
 
-export default angular.module('fwcRouter', [
+export default angular.module('mw2Router', [
   'ui.router',
 ])
   .config(routeConfig)

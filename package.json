@@ -1,5 +1,5 @@
 {
-  "name": "fwc",
+  "name": "mw2",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -31,8 +31,10 @@
     "angular-scenario": "1.6.4",
     "angular-touch": "1.6.4",
     "angular-ui-router": "1.0.0-rc.1",
+    "angularfire": "^2.3.0",
     "babel-polyfill": "6.22.0",
     "babel-runtime": "^6.23.0",
+    "firebase": "^3.9.0",
     "material-design-icons": "3.0.1"
   },
   "devDependencies": {

@@ -21,6 +21,6 @@ class Categories extends BaseService {
   }
 }
 
-export default angular.module('fwcCategoriesService', [])
+export default angular.module('mw2CategoriesService', [])
   .service('Categories', Categories)
   .name;

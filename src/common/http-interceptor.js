@@ -65,7 +65,7 @@ function httpInterceptor($timeout, $rootScope, $q) {
   };
 }
 
-export default angular.module('fwcHttpInterceptor', [
+export default angular.module('mw2HttpInterceptor', [
   'ui.router',
 ]).config(($httpProvider) => {
   'ngInject';
