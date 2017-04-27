@@ -15,7 +15,17 @@
   </head>
 
   <body ng-cloak>
-    <ui-view name="main" autoscroll="true" layout="column" layout-fill></ui-view>
+    <md-content class="">
+      <md-nav-bar
+        nav-bar-aria-label="navigation links">
+        <md-nav-item md-nav-sref="app" name="app">Dashboard</md-nav-item>
+        <md-nav-item md-nav-sref="expense" name="expense">Expenses</md-nav-item>
+      </md-nav-bar>
+      <div class="ext-content md-padding">
+        <ui-view name="main" autoscroll="true" layout="column" layout-fill></ui-view>
+      </div>
+
+    </md-content>
   </body>
 
 </html>

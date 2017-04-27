@@ -2,10 +2,14 @@ import angular from 'angular';
 
 import { appState } from '../components/app/app.route';
 
+import { expenseState } from '../components/expense/expense.route';
+
 const routeConfig = ($stateProvider, $urlRouterProvider, $locationProvider) => {
   'ngInject';
 
   $stateProvider.state(appState);
+
+  $stateProvider.state(expenseState);
 
   $urlRouterProvider.otherwise('/');
   $locationProvider.html5Mode(true);
