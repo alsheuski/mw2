@@ -1,19 +1,27 @@
 import angular from 'angular';
+import firebase from 'firebase';
 import template from './expense-create.html';
 
 class controller {
-  constructor($scope, $state) {
+  constructor($scope, $state, $firebaseArray) {
     'ngInject';
 
     this.name = 'ExpenseCreate';
     this.$scope = $scope;
     this.$state = $state;
+
+    this.ref = firebase.database().ref().child('expense');
+    this.expense = $firebaseArray(this.ref);
   }
 
   submit() {
-    console.log(this);
-
-    this.$state.go('expense');
+    this.expense.$add({
+      amount: this.amount,
+      title: this.title,
+      date: new Date(this.date).getTime(),
+    }).then(() => {
+      this.$state.go('expense');
+    });
   }
 }
 

@@ -1,11 +1,16 @@
 import angular from 'angular';
+import firebase from 'firebase';
 import template from './expense.html';
 
 class controller {
-  constructor() {
+  constructor($scope, $firebaseArray) {
     'ngInject';
 
     this.name = 'Expense';
+    this.$scope = $scope;
+
+    this.ref = firebase.database().ref().child('expense');
+    this.expenses = $firebaseArray(this.ref);
   }
 }
 

@@ -11,7 +11,16 @@
 
   <div class="content-wrapper md-padding">
 
-    expenses page
+    <md-list flex>
+      <md-subheader class="md-no-sticky">Expenses</md-subheader>
+      <md-list-item class="md-1-line" ng-repeat="item in $ctrl.expenses" ng-click="null">
+        <div class="md-list-item" layout="row" flex>
+          <h3 flex="20">{{ item.amount|number:2 }}</h3>
+          <p flex>{{ item.title }}</p>
+          <p flex="20">{{ item.date|date }}</p>
+        </div>
+      </md-list-item>
+    </md-list>
   </div>
 
 
