@@ -2,7 +2,10 @@ import angular from 'angular';
 
 import { appState } from '../components/app/app.route';
 
-import { expenseState } from '../components/expense/expense.route';
+import {
+  expenseState,
+  expenseCreateState,
+} from '../components/expense/expense.route';
 
 const routeConfig = ($stateProvider, $urlRouterProvider, $locationProvider) => {
   'ngInject';
@@ -10,6 +13,7 @@ const routeConfig = ($stateProvider, $urlRouterProvider, $locationProvider) => {
   $stateProvider.state(appState);
 
   $stateProvider.state(expenseState);
+  $stateProvider.state(expenseCreateState);
 
   $urlRouterProvider.otherwise('/');
   $locationProvider.html5Mode(true);
@@ -29,5 +33,5 @@ export default angular.module('mw2Router', [
   'ui.router',
 ])
   .config(routeConfig)
-  .run(routeRun)
+.run(routeRun)
   .name;

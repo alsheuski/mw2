@@ -1,0 +1,29 @@
+<div class="expense-create">
+  <h1>Create new expense</h1>
+  <form name="$ctrl.form" ng-submit="$ctrl.submit()">
+
+    <div layout-gt-xs="row">
+      <md-input-container class="md-block" flex-gt-xs>
+        <label>Title</label>
+        <input ng-model="$ctrl.title">
+      </md-input-container>
+
+      <md-input-container>
+        <label>Enter date</label>
+        <md-datepicker ng-model="$ctrl.date"></md-datepicker>
+      </md-input-container>
+    </div>
+
+    <div layout-gt-xs="row">
+      <md-input-container class="md-block" flex="30">
+        <label>Amount</label>
+        <input ng-model="$ctrl.amount">
+      </md-input-container>
+    </div>
+
+    <div layout="row" layout-align="end center">
+       <md-button class="md-primary md-raised" type="submit">Create</md-button>
+    </div>
+
+  </form>
+</div>

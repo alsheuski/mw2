@@ -8,3 +8,14 @@ export const expenseState = {
     },
   },
 };
+
+export const expenseCreateState = {
+  name: 'expenseCreate',
+  parent: 'expense',
+  url: '/create',
+  views: {
+    'main@': {
+      component: 'mw2ExpenseCreate',
+    },
+  },
+};
